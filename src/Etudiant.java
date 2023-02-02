@@ -5,33 +5,25 @@ public class Etudiant {
     private String name;
     private String prenom;
     private String matricule;
-    private String age;
+    private int age;
 
     // declaration de ville
 
     // private Ville ville = new Ville();
-    private Ville ville;
+    private Ville ville = new Ville();
 
     public Etudiant() {
         super();
-        this.ville = new Ville();
+        //this.ville = new Ville();
     }
 
-    public Etudiant(int id, String name, String prenom, String matricule, String age) {
-        super();
+    public Etudiant(int id, String name, String prenom,
+                    String matricule, int age, Ville ville) {
         this.id = id;
         this.name = name;
         this.prenom = prenom;
         this.matricule = matricule;
         this.age = age;
-    }
-
-
-    public Ville getVille() {
-        return ville;
-    }
-
-    public void setVille(Ville ville) {
         this.ville = ville;
     }
 
@@ -67,16 +59,19 @@ public class Etudiant {
         this.matricule = matricule;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
+    public Ville getVille() {
+        return ville;
+    }
 
-    //public static void main(String[] args) {}
-
-
+    public void setVille(Ville ville) {
+        this.ville = ville;
+    }
 }

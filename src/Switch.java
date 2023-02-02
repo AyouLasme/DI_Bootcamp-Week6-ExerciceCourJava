@@ -1,13 +1,7 @@
-
-
-// ecrire un code qui permet de calculer la taille et poids 
-
-import boucles.While;
-import com.sun.source.tree.DoWhileLoopTree;
-
 import java.util.Scanner;
 
-public class IMC {
+public class Switch {
+
 
     public static void main(String[] args) throws Exception {
 
@@ -50,7 +44,7 @@ public class IMC {
 
                     System.out.println("votre imc est de " + imc1);
                     // conditions IMC
-                    if (imc1 < 18.5) {
+                    /*if (imc1 < 18.5) {
                         System.out.println("Poids insuffisant et pouvant occasionner certains risques pour la santé.");
                     } else if (imc1 < 24.9) {
                         System.out.println("Poids santé qui n'augmente pas les risques pour la santé");
@@ -58,7 +52,8 @@ public class IMC {
                         System.out.println(" Excès de poids pouvant occasionner certains risques pour la santé.");
                     } else {
                         System.out.println(" Obésité, risque accru de développer certaines maladies");
-                    }
+                    }*/
+
 
 
                 } catch (Exception e) {
@@ -77,5 +72,4 @@ public class IMC {
         } while(reponse == 1);
 
     }
-
 }
